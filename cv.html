@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+    <title>PersonalWeb</title>
+    
+<!--
+Mini Profile Template
+https://templatemo.com/tm-530-mini-profile
+-->
+  </head>
+  <body>
+      
+    <!-- CV section -->
+    <div id="tmContact" class="parallax-window" data-parallax="scroll" data-image-src="">
+      <div class="container-fluid">
+        <div class="row">
+          <footer class="col-12">
+            <div class="tm-welcome-left">
+                <h2 class="tm-welcome-title">Educations</h2>
+                <ul>
+                  <li>2018 Ph.D. McGill Univeristy</li>
+                  <li>2013 Master Peking University</li>
+                  <li>2011 Bechelar Peking University</li>
+                </ul>
+            </div>
+          </footer>
+        </div>
+        <div class="row">
+          <footer class="col-12">
+            <div class="tm-welcome-left">
+                <h2 class="tm-welcome-title">Work Experience</h2>
+                <ul>
+                  <li>2018-now Munich University, Postdoc Fellow</li>
+                  <li>2019/6-2019/9 Durham University, Postdoc Fellow</li>
+                </ul>
+            </div>
+          </footer>
+        </div>
+        <div class="row">
+          <footer class="col-12">
+            <div class="tm-welcome-left">
+                <h2 class="tm-welcome-title">Awards</h2>
+                <ul>
+                  <li>2018-now Munich University, Postdoc Fellow</li>
+                  <li>2019/6-2019/9 Durham University, Postdoc Fellow</li>
+                </ul>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    
+    <!-- section -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script>
+      function detectMsBrowser() {
+        using_ms_browser =
+          navigator.appName == "Microsoft Internet Explorer" ||
+          (navigator.appName == "Netscape" &&
+            navigator.appVersion.indexOf("Edge") > -1) ||
+          (navigator.appName == "Netscape" &&
+            navigator.appVersion.indexOf("Trident") > -1);
+
+        if (using_ms_browser == true) {
+          alert(
+            "Please use Chrome or Firefox for the best browsing experience!"
+          );
+        }
+      }
+      function setBrandMarginTop() {
+        var bottomContainerHeight = $(".tm-welcome-container").height();
+
+        $(".tm-brand-container-outer").css({
+          "margin-top": -bottomContainerHeight + "px"
+        });
+      }
+
+      $(function() {
+        setBrandMarginTop();
+        detectMsBrowser();
+
+        // Handle window resize event
+        $(window).resize(function() {
+          setBrandMarginTop();
+        });
+      });
+    </script>
+  </body>
+</html>

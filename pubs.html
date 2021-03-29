@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+    <title>PersonalWeb</title>
+    
+<!--
+Mini Profile Template
+https://templatemo.com/tm-530-mini-profile
+-->
+  </head>
+  <body>
+      
+    <!-- CV section -->
+    <div id="tmContact" class="parallax-window" data-parallax="scroll" data-image-src="">
+      <div class="container-fluid">
+        <div class="row">
+          <footer class="col-12">
+            <div class="tm-welcome-left">
+                <h2 class="tm-welcome-title">Submitted & in Prep.</h2>
+                <ul>
+                  <li>Perez-Silva, Andrea, <b>Duo Li</b>, Alice-Agnes Gabriel, and Yoshihiro Kaneko (2021), 3D modeling of long-term slow slip events along the flat-slab segment in the Guerrero Seismic Gap, Mexico, EarthArxiv, doi:10.31223/X5C890, submitted</li>
+                  <li>Ramos, Marlon, Yihe Huang, Thomas Ulrich, <b>Duo Li</b>, Alice-Agnes Gabriel, and Amanda Thomas (2021), Assessing Margin-Wide Rupture Behaviors along the Cascadia Megathrust with 3-D Dynamic Rupture Simulations, EarthArxiv, doi:10.31223/X5SC8C, submitted</li>
+                  <li><b>Li,D.</b> and Gabriel, A.-A., On the initiation of 2014 Mw7.3 Guerrero earthquake: a 3D linked modeling between slow slip and megathrust earthquake, in prep.​</li>
+                  <li>Taufiqurrahman, Gabriel, A.-A., <b>Li,D.</b>, Ulrich T., Li, B., Wirp S. Carena S., Verdecchia A. and Gallovic F. Untangling the Dynamics of the 2019 Ridgecrest Sequence by Integrated Dynamic Rupture and Coulomb Stress Modeling Across an Immature 3D Conjugate Fault Network. in prep. ​</li>
+                  <li>Tinti E., Casarotti E., Ulrich T., Taufiqurrahman, <b>Li,D.</b> and Gabriel A.-A., Constraining multi-fault rupture dynamics of the Mw 6.5, 30 October 2016, Norcia earthquake, Italy, in prep.​</li>
+                  <li>Zhang, L. Liu, Y., <b>Li,D.</b>, Yu H., He C. Effect of Complexity in Fault Geometry of the Seismogenic Yingxiu-Beichuan Fault on Coseismic Slip and Earthquake Sequence, in prep.​</li>
+                </ul>
+            </div>
+          </footer>
+        </div>
+        <div class="row">
+          <footer class="col-12">
+            <div class="tm-welcome-left">
+                <h2 class="tm-welcome-title">Peer-reviewed Journals</h2>
+                <ul>
+                  <li><b>Li, Duo</b>, and Yajing Liu (2021), Cascadia megathrust earthquake rupture model constrained by geodetic fault locking, Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences, 379(2196), 20200135, doi:10.1098/rsta.2020.0135</li>
+                  <li>Gabriel, Alice-Agnes, <b>Duo Li</b>, Simone Chiocchetti, Maurizio Tavelli, Ilya Peshkov, Romenski Evgeniy, and Michael Dumbser (2021), A unified first order hyperbolic model for nonlinear dynamic rupture processes in diffuse fracture zones, Philosophical Transactions of the Royal Society A, 379(2196), doi:10.1098/rsta.2020.0130.</li>
+                  <li>Haotian, Li, Wei Meng, <b>Li Duo</b>, Liu Yajing, Kim YoungHee, and Zhou Shiyong (2018), Segmentation of Slow Slip Events in South Central Alaska Possibly Controlled by a Subducted Oceanic Plateau, Journal of Geophysical Research: Solid Earth, 123(1), 418-436, doi:10.1002/2017JB014911.</li>
+                  <li><b>Li, Duo</b>, Jeffrey J. McGuire, Yajing Liu, and Jeanne L. Hardebeck (2018), Stress rotation across the Cascadia megathrust requires a weak subduction plate boundary at seismogenic depths, Earth and Planetary Science Letters, 485, 55 - 64, doi:https://doi.org/10.1016/j.epsl.2018.01.002.</li>
+                  <li><b>Li, Duo</b> (2018), Fast to slow megathrust slip and fault strength at seismogenic depths of the Cascadia subduction zone, Ph.D. Thesis</li>
+                  <li><b>Li, Duo</b>, and Yajing Liu (2017), Modeling slow-slip segmentation in Cascadia subduction zone constrained by tremor locations and gravity anomalies, Journal of Geophysical Research: Solid Earth, 122, 3138–3157, doi:10.1002/2016JB013778, 2016JB013778.</li>
+                  <li><b>Li, Duo</b>, and Yajing Liu (2016), Spatiotemporal evolution of slow slip events in a non-planar fault model for northern Cascadia subduction zone, Journal of Geophysical Research: Solid Earth, 63(3), 959–968, doi:10.1002/2016JB012857.</li>
+                </ul>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    
+    <!-- section -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script>
+      function detectMsBrowser() {
+        using_ms_browser =
+          navigator.appName == "Microsoft Internet Explorer" ||
+          (navigator.appName == "Netscape" &&
+            navigator.appVersion.indexOf("Edge") > -1) ||
+          (navigator.appName == "Netscape" &&
+            navigator.appVersion.indexOf("Trident") > -1);
+
+        if (using_ms_browser == true) {
+          alert(
+            "Please use Chrome or Firefox for the best browsing experience!"
+          );
+        }
+      }
+      function setBrandMarginTop() {
+        var bottomContainerHeight = $(".tm-welcome-container").height();
+
+        $(".tm-brand-container-outer").css({
+          "margin-top": -bottomContainerHeight + "px"
+        });
+      }
+
+      $(function() {
+        setBrandMarginTop();
+        detectMsBrowser();
+
+        // Handle window resize event
+        $(window).resize(function() {
+          setBrandMarginTop();
+        });
+      });
+    </script>
+  </body>
+</html>
