@@ -85,7 +85,7 @@ a:hover {
 }
 
 .tm-brand-container-inner {
-  max-width: 580px;
+  max-width: 380px;
   width: 70%;
 }
 
@@ -94,7 +94,7 @@ a:hover {
 }
 
 .tm-brand-name {
-  font-size: 3.8rem;
+  font-size: 3.0rem;
 }
 
 .tm-brand-description {
