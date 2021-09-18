@@ -90,7 +90,7 @@ a:hover {
 }
 
 .tm-brand-container {
-  padding: 75px 110px;
+  padding: 55px 60px;
 }
 
 .tm-brand-name {
@@ -102,12 +102,12 @@ a:hover {
 }
 
 .parallax-window {
-  min-height: 800px;
+  min-height: 700px;
   background: transparent;
 }
 
 #tmContact {
-  min-height: 800px;
+  min-height: 500px;
 }
 
 .tm-welcome-container {
